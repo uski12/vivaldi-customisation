@@ -13,4 +13,4 @@ I will most likely upload individual files that modify individual components of 
 This mod is still not completed, and it might not work properly for everyone who tries it.
 
 
-######Made for Vivaldi ver. 3.7.2218.58, although it _should_ work with other versions
+##### Made for Vivaldi ver. 3.7.2218.58, although it _should_ work with other versions
