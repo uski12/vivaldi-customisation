@@ -2,6 +2,7 @@
 UI customisation mods for Vivaldi, the web browser. Get Vivaldi [_here_](https://vivaldi.com/)
 
 This modification alters the highly customisable UI offered by Vivaldi, to be more "aesthetic" as per my liking
+Currently, it is focused on altering the tab area, although I will eventually alter the side panel too
 
 I will most likely upload individual files that modify individual components of Vivaldi's UI, instead of a single large file with all customisations. 
 
