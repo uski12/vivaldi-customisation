@@ -1,5 +1,6 @@
 # vivaldi-customisation
-Customisation mods for vivaldi
+UI customisation mods for Vivaldi, the web browser. Get Vivaldi here. https://vivaldi.com/
 
 
-![image](https://user-images.githubusercontent.com/67533410/116578232-d742c880-a92e-11eb-9f64-9304f83f5a67.png)
+![image](https://user-images.githubusercontent.com/67533410/116579142-ba5ac500-a92f-11eb-89aa-d8e73bd253b2.png)
+
