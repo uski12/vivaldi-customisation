@@ -14,7 +14,7 @@ I will most likely upload individual files that modify individual components of 
 This mod is still not completed, and it might not work properly for everyone who tries it.
 
 ## Installation
-1.) Download and place the custom.css file in any folder (example: create a folder called Vivaldi in the documents folder, and place the CSS file within) 
+1.) Download and place the custom.css file in any folder (example: custom.css inside "Vivaldi" inside "Documents") 
 ![image](https://user-images.githubusercontent.com/67533410/116647036-35a39180-a997-11eb-9647-adae59e77d2e.png)
 
 
