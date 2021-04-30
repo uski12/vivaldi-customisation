@@ -14,8 +14,9 @@ I will most likely upload individual files that modify individual components of 
 This mod is still not completed, and it might not work properly for everyone who tries it.
 
 ## Installation
-Place the custom.css file in any folder.
-In Vivaldi's address bar, type in `vivaldi://experiments` --> Enable CSS modifications.
+1.) Download and place the custom.css file in any folder (example: create a folder called Vivaldi in the documents folder, and place the CSS file within)
+
+2.) In Vivaldi's address bar, type in `vivaldi://experiments` --> Click on enable CSS modifications.
 Go to settings --> Appearance --> Custom UI Modifications --> "Select folder" --> Point to folder containing custom.css
 
 
