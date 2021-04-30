@@ -24,6 +24,9 @@ This mod is still not completed, and it might not work properly for everyone who
 
 3.) Go to settings --> Appearance --> Custom UI Modifications --> "Select folder" --> Point to folder containing custom.css ![image](https://user-images.githubusercontent.com/67533410/116646993-1efd3a80-a997-11eb-8228-f2975659e9e2.png)
 
+![image](https://user-images.githubusercontent.com/67533410/116647466-40125b00-a998-11eb-9048-0eaf7877527a.png)
+
+
 
 
 ###### Made for Vivaldi ver. 3.7.2218.58, although it _should_ work with other versions
