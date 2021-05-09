@@ -11,6 +11,12 @@ I will most likely upload individual files that modify individual components of 
 
 **Customised UI:** ![image](https://user-images.githubusercontent.com/67533410/116579142-ba5ac500-a92f-11eb-89aa-d8e73bd253b2.png)
 
+## Features
+Rounded tab corners
+Tab background blurred
+Address bar resized & background blurred
+
+
 This mod is still not completed, and it might not work properly for everyone who tries it.
 
 ## Installation
