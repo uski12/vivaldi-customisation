@@ -11,9 +11,9 @@ I plan to upload individual files that modify individual components of Vivaldi's
 **Customised UI:** ![image](https://user-images.githubusercontent.com/67533410/116579142-ba5ac500-a92f-11eb-89aa-d8e73bd253b2.png)
 
 ## Features
-Rounded tab corners
-Tab background blurred
-Address bar resized & background blurred
+1.) Rounded tab corners
+2.) Tab background blurred
+3.) Address bar resized & background blurred
 
 
 This mod is still not completed, and it might not work properly for everyone who tries it.
@@ -37,4 +37,4 @@ This mod is still not completed, and it might not work properly for everyone who
 
 
 
-###### Made for Vivaldi ver. 3.7.2218.58, although it _should_ work with other versions
+###### Made for Vivaldi ver. 5.4.2753.37, although it _should_ work with other versions
