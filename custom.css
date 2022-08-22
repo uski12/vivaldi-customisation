@@ -1,0 +1,182 @@
+/*GLOBAL VARIABLES*/
+:root {
+	--bdrSize: 20px;
+}
+
+/*TABS: REDUCE SIZE OF TAB SIDES*/
+.tab-position {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+/*TABS: SET BORDER RADIUS OF ALL TABS*/
+.tabs-top .tab-position .tab {
+	border-radius: var(--bdrSize);
+	/*REDUNDANT
+	border-top-left-radius: var(--bdrSize);
+	border-top-right-radius: var(--bdrSize);*/
+}
+.tabs-top .tab-position .tab:not(.tab-in-accordion):not(.tab-accordion) {
+	border-radius: var(--bdrSize);
+    /*REDUNDANT
+	border-top-left-radius: var(--radiusHalf);
+    border-top-right-radius: var(--radiusHalf);
+	border-top-left-radius: var(--bdrSize);
+	border-top-right-radius: var(--bdrSize);*/
+}
+/*TABS: REMOVE CLOSE BUTTON BACKGROUND*/
+.tab-position .tab .close {
+    background-color: #00000000;
+}
+/*TABS: DECREASE NON-FOCUS OPACITY*/
+.close {
+	opacity: 0.6;
+}
+/*TABS: INCREASE GRADIENT WIDTH*/
+.tab-position .tab .title {
+    -webkit-mask-image: -webkit-linear-gradient(180deg, transparent 0, #fff 35px);
+}
+
+/*TAB INDICATOR*/
+/*TAB INDICATOR: TAB GROUP ROUNDING*/
+.tab-indicator:first-of-type {
+    border-top-left-radius: var(--bdrSize);
+}
+.tabs-top .tab-indicator:last-of-type, .tabs-bottom .tab-indicator:last-of-type {
+    margin-right: 0px;
+	border-top-right-radius: var(--bdrSize);
+}
+/*TAB INDICATOR: SET TAB GROUP SIDE WIDTH AND TOP OFFSET*/
+.tab-group-indicator {
+    /* offset-distance: 20px; */
+    padding-right: 8px;
+    padding-left: 8px;
+    top: -2px;
+}
+/*TAB INDICATOR: ACTIVE TAB INDICATOR HEIGHT FIX*/
+.tab-indicator {
+    height: 8px;
+    border-bottom-width: 2px;
+}
+.tab-indicator.active {
+    height: inherit;
+    border-bottom-width: 2px;
+}
+
+/*DROP SHADOW FOR ACTIVE TAB*/
+/*
+#browser .tab-position .tab.active {
+	filter: drop-shadow(0px 0px 2px black);
+}
+#browser.tabs-top #header {
+    	contain: unset;
+}*/
+
+
+/*Decrease tab spacing in maximised window*/
+#tabs-tabbar-container.top {
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+/*Disable blur for whole tab area*/
+#browser.tabs-top #header {
+	backdrop-filter: none;
+}
+/*Enable blur for tab background*/
+.tabs-top .tab-position .tab {
+  	backdrop-filter: blur(2px);
+}
+
+
+/*ADDRESSBAR/SEARCHBAR: smaller focus highlighter*/
+.color-behind-tabs-on .SearchField:focus-within, .color-behind-tabs-on .UrlBar-AddressField:focus-within {
+	outline: 1px solid var(--colorHighlightBg)
+}
+
+/*ADDRESSBAR/SEARCHBAR: border radius*/
+.SearchField, .UrlBar-AddressField {
+	border-radius: var(--bdrSize);
+	filter: unset;
+	box-shadow: 0 0 1px 1px #00000061 inset;
+}
+/*ADDRESSBAR/SEARCHBAR: spacing*/
+.UrlBar-AddressField {
+	flex: 0.97 0;
+	position: relative;
+	margin: auto;
+}
+.SearchField {
+	position: relative;
+	margin: auto;
+}
+/*ADDRESSBAR/SEARCHBAR: round border on all buttons*/
+.toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar > button, .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar > button {
+    border-radius: var(--bdrSize);
+}
+
+
+
+/*Addressbar & SearchField focus shadowing*/
+.SearchField, .UrlBar-AddressField {
+	box-shadow: 0px 0px 4px 0px #00000061 inset;
+	border-color: #00000000;
+}
+
+/*Toolbar bottom border removal*/
+.address-top .toolbar-mainbar:after {
+	content: '';
+	height: 0px;
+}
+
+
+
+
+/*START PAGE*/
+/*Start page speeddial heading transparency + transparent border + blur*/
+.startpage .startpage-navigation {
+	background-color: var(--colorBgAlphaBlur);
+	box-shadow: 0px 0px 9px 4px #05050520;
+	backdrop-filter: blur(2px);
+	border-radius: 100px;
+	min-width: 70%;
+	margin: auto;
+	top: 8px;
+}
+/*Speed dial group separation transparency (the black border between '+' and 'Bookmarks')*/
+.startpage .startpage-navigation .startpage-navigation-group:last-of-type {
+	margin-right: 0;
+	border-left: 1px solid #05050520;
+}
+
+
+/*Start page Search bar */
+.sdwrapper .iconmenu-container.SearchField {
+	box-shadow: 0px 0px 9px 4px #05050520;
+	background-color: var(--colorBgAlphaBlur);
+    backdrop-filter: var(--backgroundBlur);
+	height: 36px;
+	border-radius: 100px;
+}
+
+/*Tracker Statistics*/
+.tracker-warning, .SpeedDialView-SearchField, .SpeedDial-Blocked-Counter {
+    background-color: var(--colorBgAlphaBlur);
+    backdrop-filter: var(--backgroundBlur);
+	box-shadow: 0px 0px 9px 4px #05050520;
+	border-radius: 100px;
+}
+
+
+/*Panel opacity & blur*/
+/*
+#panels-container {
+    	border: 0 solid var(--colorBorder);
+    	background-color: #00000000;
+	filter: drop-shadow(0px 0px 2px black);
+	backdrop-filter: blur(10px);
+}
+#panels-container.left:not(.overlay), #panels-container.left.icons {
+    	box-shadow: 0px 0px 0px 0px var(--colorBorder);
+}
+*/
