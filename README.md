@@ -12,7 +12,9 @@ I plan to upload individual files that modify individual components of Vivaldi's
 
 ## Features
 1.) Rounded tab corners
+
 2.) Tab background blurred
+
 3.) Address bar resized & background blurred
 
 
