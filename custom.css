@@ -1,4 +1,3 @@
-/*TESTED ON VIVALDI VERSION 5.4*/
 /*GLOBAL VARIABLES*/
 :root {
 	--bdrSize: 20px;
@@ -6,8 +5,7 @@
 
 /*TABS: REDUCE SIZE OF TAB SIDES*/
 .tab-position {
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-right: 1px;
 }
 
 /*TABS: SET BORDER RADIUS OF ALL TABS*/
@@ -38,8 +36,30 @@
     -webkit-mask-image: -webkit-linear-gradient(180deg, transparent 0, #fff 35px);
 }
 
-/*TAB INDICATOR*/
-/*TAB INDICATOR: TAB GROUP ROUNDING*/
+/*TAB STACK: two level fix*/
+.tabs-top .tab-position .tab.insubstrip.active:not(.marked) {
+    padding-top: 2px;
+    border-bottom-left-radius: var(--bdrSize);
+    border-bottom-right-radius: var(--bdrSize);
+}
+/*TAB STACK: accordion fix*/
+svg.svg-tab-stack {
+    height: 110%;
+}
+.svg-tab-stack, .svg-tab-selection {
+    border-radius: var(--bdrSize);
+}
+.svg-tab-stack rect, .svg-tab-selection rect {
+	--bdrLocal: 16px;
+    rx: var(--bdrLocal);
+    ry: var(--bdrLocal);
+}
+
+
+/*TAB STACK INDICATOR*/
+/*TAB STACK INDICATOR: TAB GROUP ROUNDING*/.tabs-top .tab-accordion.active .svg-tab-stack, .tabs-top .tab-in-accordion.tab-first-in-group .svg-tab-stack, .tabs-bottom .tab-accordion.active .svg-tab-stack, .tabs-bottom .tab-in-accordion.tab-first-in-group .svg-tab-stack {
+    height: 110%;
+}
 .tab-indicator:first-of-type {
     border-top-left-radius: var(--bdrSize);
 }
@@ -47,14 +67,14 @@
     margin-right: 0px;
 	border-top-right-radius: var(--bdrSize);
 }
-/*TAB INDICATOR: SET TAB GROUP SIDE WIDTH AND TOP OFFSET*/
+/*TAB STACK INDICATOR: SET TAB GROUP SIDE WIDTH AND TOP OFFSET*/
 .tab-group-indicator {
     /* offset-distance: 20px; */
     padding-right: 8px;
     padding-left: 8px;
     top: -2px;
 }
-/*TAB INDICATOR: ACTIVE TAB INDICATOR HEIGHT FIX*/
+/*TAB STACK INDICATOR: ACTIVE TAB INDICATOR HEIGHT FIX*/
 .tab-indicator {
     height: 8px;
     border-bottom-width: 2px;
@@ -74,20 +94,14 @@
 }*/
 
 
-/*Decrease tab spacing in maximised window*/
+/*Decrease tab spacing above/below*/
 #tabs-tabbar-container.top {
     padding-top: 4px;
     padding-bottom: 5px;
 }
 
-/*Disable blur for whole tab area*/
-#browser.tabs-top #header {
-	backdrop-filter: none;
-}
-/*Enable blur for tab background*/
-.tabs-top .tab-position .tab {
-  	backdrop-filter: blur(2px);
-}
+
+
 
 
 /*ADDRESSBAR/SEARCHBAR: smaller focus highlighter*/
